@@ -1,0 +1,87 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  04. BANNER CSS START
+/*----------------------------------------*/
+
+.bannner-outer {
+  position: relative;
+  @media #{$xs} {
+    padding: 0.5rem 0.25rem 0rem;
+  }
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+  .banner-text-outer {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    .banner-text { max-width: 725px;
+        h4{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            text-transform: uppercase;
+            color: var(--tp-common-white);
+            padding-bottom: 7px;
+        }
+      h1 {
+        color: var(--tp-common-white);
+        margin-bottom: 1rem;
+        font-size: var(--tp-fz-h1);
+        font-weight: var(--tp-fw-bold);
+        line-height: 140%;
+        padding-bottom: 8px;
+        @media #{$md} {
+          font-size: var(--tp-fz-h2);
+        }
+        @media #{$xs} {
+          font-size: var(--tp-fz-h2);
+        }
+      }
+      h3 {
+        color: var(--tp-common-white);
+        font-size:var(--tp-fz-h3);
+        font-weight: var(--tp-fw-sbold);
+        margin-bottom: 15px;
+        @media #{$md} {
+          font-size: var(--tp-fz-h3);
+        }
+        @media #{$xs} {
+          font-size: var(--tp-fz-h3);
+        }
+      }
+      p {
+        font-size: var(--tp-fz-h5);
+        font-weight: var(--tp-fw-regular);
+        color: var(--tp-common-white);
+        padding-bottom: 7px;
+      }
+      .lets-talk {
+        color: var(--tp-theme-pink);
+        font-size: var(--tp-fz-h3);
+        display: inline-block;
+        line-height: 1.4;
+        transition: all 0.5s;
+        margin-top: 15px;
+        position: relative;
+        z-index: 9;
+      }
+      @media #{$xs} {
+        .banner-left {
+          order: 2;
+        }
+      }
+      @media #{$xs} {
+        .banner-right {
+          order: 1;
+        }
+      }
+    }
+  }
+}
