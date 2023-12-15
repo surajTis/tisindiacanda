@@ -1,0 +1,30 @@
+@use "../utils" as *;
+
+.start-project-outer{
+    padding: 115px 0px;
+    .start-project-main{display: flex; width: 100%;  flex-wrap: wrap;
+        h2{
+            background: linear-gradient(91deg, #9E0000 6.96%, #FF8A00 98.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: calc(var(--tp-fz-h1) + 20px) ;
+            font-weight: var(--tp-fw-bold);
+            padding-bottom:15px;
+        }
+        p{
+            width: 100%;
+            font-size: var(--tp-fz-h3);
+            font-weight: var(--tp-fw-sbold);
+            color: var(--tp-common-black);
+            line-height: 190%;
+            padding-bottom:20px;
+        }
+        a{
+            @include request-btn;
+            i{
+                color: var(--tp-heading-spanred);
+            }
+        }
+    }
+}

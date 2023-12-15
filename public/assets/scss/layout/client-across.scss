@@ -1,0 +1,47 @@
+@use "../utils" as *;
+.client-cross-outer{
+    background: linear-gradient(211deg, #4E004A 1.12%, #010042 100%); padding: 70px 0px 110px;
+    & .head{ padding-bottom: 60px;
+       & h3{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            text-transform: uppercase;
+            color: var(--tp-common-white);
+            padding-bottom:20px;
+        }
+        & h2{
+            font-size: var(--tp-fz-h2);
+            font-weight: var(--tp-fw-sbold);
+            color: var(--tp-common-white);
+            padding-bottom:15px;
+        }
+        & p{
+            font-size: var(--tp-fz-h3);
+            font-weight: var(--tp-fw-regular);
+            color: var(--tp-common-white);
+         
+        }
+        & h4{
+            font-size: var(--tp-fz-h3);
+            font-weight: var(--tp-fw-bold);
+            color: var(--tp-common-white);
+         
+        }
+    }
+    .client-across-main{
+        .client-across-slide{
+            .client-across-bx{margin: 0px 32px;
+                figure{
+                    border: 1px solid #898989; background: rgba(217, 217, 217, 0.06); padding: 10px; display: flex; 
+                    height: 146px; justify-content: center; align-items: center;
+                    img{
+                        object-fit: cover; max-height: 100%;
+                    }
+                }
+            }
+        }
+        .client-across-slide2{
+            direction: rtl; margin-top: 70px;
+        }
+    }
+}

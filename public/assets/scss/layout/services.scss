@@ -1,0 +1,65 @@
+@use "../utils" as *;
+.services-outer{ background: linear-gradient(215deg, #420049 0.01%, #001272 96.4%); padding:70px 0px;
+    & .services-main{
+        & .head{ text-align: center; max-width: 1030px; margin: 0 auto;
+            & h3{
+                font-size: var(--tp-fz-h4);
+                font-weight: var(--tp-fw-regular);
+                text-transform: uppercase;
+                color: var(--tp-common-white);
+                padding-bottom:20px;
+            }
+            & h2{
+                font-size: var(--tp-fz-h2);
+                font-weight: var(--tp-fw-sbold);
+                color: var(--tp-common-white);
+                padding-bottom:15px;
+            }
+        }
+        & .row{ margin-top:20px;
+            & .services-bx{
+                width: 33.33%; padding: 20px 15px 45px; border-bottom: 1px solid #CACACA; border-right: 1px solid #cacaca;
+                & figure{
+                    height: 53px; display: flex;
+                }
+                & h3{
+                    color: var(--tp-heading-orange);
+                    font-size: calc(var(--tp-fz-h4) + 2px);
+                    text-transform: uppercase;
+                    font-weight: var(--tp-fw-bold);
+                    padding-bottom:14px;
+                }
+                & ul{
+                    padding-left:0; list-style: none;
+                    li{
+                        font-size: var(--tp-fz-h5);
+                        font-weight: var(--tp-fw-regular);
+                        color: var(--tp-common-white);
+                        margin-bottom: 15px;
+                        line-height: 120%;
+                        padding-left:15px;
+                        position: relative;
+                        list-style: none;
+                        &::before{
+                            content:"\f0da";font-family: "Font Awesome 6 Free";color: var(--tp-common-white);
+                            font-size: var(--tp-fz-p);font-weight: var(--tp-fw-black); margin-left: 5px; position: absolute;
+                            left: 0; top:0; margin: 0;color: var(--tp-heading-spanred);
+                        }
+                    }
+                }
+                &:nth-child(3n){
+                    border-right: 0px;
+                }
+                &:nth-child(4){
+                    border-bottom: 0px;padding-top: 45px;
+                }
+                &:nth-child(5){
+                    border-bottom: 0px;padding-top: 45px;
+                }
+                &:nth-child(6){
+                    border-bottom: 0px;padding-top: 45px;
+                }
+            }
+        }
+    }
+}

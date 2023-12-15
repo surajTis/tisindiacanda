@@ -1,0 +1,28 @@
+@use "../utils" as *;
+.satisfied-client-outer{
+    padding: 115px 0px;
+    & .satisfied-bx{ padding:0px 15px; width: 33.33%;
+        & h3{
+            background: linear-gradient(104deg, #F00 11.77%, #FFF500 89.04%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            font-size: calc(var(--tp-fz-h1) + var(--tp-fz-h1)) ;
+            text-transform: uppercase;
+            font-weight: var(--tp-fw-bold);
+            line-height:90%;
+        }
+        & h6{
+            font-size: var(--tp-fz-h6);
+            font-weight: var(--tp-fw-sbold);
+        }
+        &:nth-child(2){
+            & h3{
+                background: linear-gradient(102deg, #BF00CF 8%, #260094 89.44%);
+                background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            }
+        }
+    }
+}

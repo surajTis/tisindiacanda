@@ -1,0 +1,57 @@
+@use "../utils" as *;
+
+.through-digital-outer{ padding: 73px 0px;background: linear-gradient(211deg, #4E004A 1.12%, #010042 100%);
+    .head{ max-width: 984px; margin: 0 auto; text-align: center;
+        & h3{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            text-transform: uppercase;
+            color: var(--tp-common-white);
+            padding-bottom:20px;
+        }
+        & h2{
+            font-size: var(--tp-fz-h2);
+            font-weight: var(--tp-fw-sbold);
+            color: var(--tp-common-white);
+            padding-bottom:15px;
+            line-height: 145%;
+        }
+    }
+    .through-digital-tab{
+        margin-top: 25px;
+        ul{ border-color:#D0D0D0; 
+            li{  width:33.33%;
+                button{
+                    background: none !important; border:none !important; margin: 0px !important; width: 100%; padding: 35px 15px;
+                    font-size: var(--tp-fz-h3) ; color: var(--tp-common-white);;
+                }
+                button.active{
+                    text-shadow: 0px 0px 10px rgb(255, 61, 0); color: var(--tp-common-white) !important; position: relative;
+                    &::after{
+                        height: 8px; background: var(--tp-common-white); width: 100%; content: ''; position: absolute; left: 0; bottom:-3px;
+                    }
+                    &::before{
+                        background: url('./../../img/tab-arrow.webp') no-repeat; width: 26px; height: 13px; position: absolute;bottom: 1px; left: 0;
+                        right: 0; margin: 0 auto; content: '';
+                    }
+                }
+            }
+        }
+        .tab-content.accordion{
+            .accordion-item{
+                background: none; border-radius: 0px;
+                .accordion-body{
+                    display: flex; flex-wrap: wrap; padding: 0; margin-top: 35px;
+                    .through-digital-bx{
+                        width:25%; padding: 0px 15px; height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;
+                        
+                        img{
+                            max-height: 100%; object-fit: contain;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
