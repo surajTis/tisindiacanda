@@ -1,0 +1,79 @@
+@use "../utils" as *;
+
+.about-digitech-outer{
+    padding: 70px 0px;
+    .about-digitech-left{ padding-right: 66px;
+        & h3{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            text-transform: uppercase;
+            color: var(--tp-common-black);
+            padding-bottom:20px;
+        }
+        & h2{
+            font-size: var(--tp-fz-h2);
+            font-weight: var(--tp-fw-sbold);
+            color: var(--tp-common-black);
+            padding-bottom:15px;
+        }
+        p{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            color: var(--tp-common-black);
+            padding-bottom:25px;
+        }
+        h4{
+            font-size: calc(var(--tp-fz-h3) + 4px) ;
+            font-weight: var(--tp-fw-bold);
+            color: var(--tp-common-black);
+            padding-bottom:10px;
+        }
+    }
+    .about-digitech-right{margin-top: 20px;
+        figure{margin: 0; position: relative;
+            img{
+                max-width: 100%;border-radius: 10px; 
+            }
+        }
+        .about-small{
+            position: absolute; left: 0; width: 100%; bottom:-70px; padding: 0px 25px;
+            .about-small-sm{
+                width: 50%; float: left; padding: 0px 7px;
+                img{
+                    border-radius: 10px;border: 1px solid #FFF; width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.role-digital-marketing-outer{background: linear-gradient(215deg, #420049 0.01%, #001272 96.4%);
+    padding: 100px 0px;
+    .role-digital-left{
+        figure{ position: relative;
+            img{
+                width: 100%;
+            }
+            .role-digital-sm{
+                position: absolute; left:-60px; bottom: -115px;width: 345px; height: 240px; z-index: 1; display: flex; 
+                img{
+                    border-radius: 8px;border: 3px solid #FFF; width: 100%; object-fit: cover;
+                }
+            }
+        }
+    }
+    .role-digital-right{ padding-left:40px;
+        p{
+            font-size: var(--tp-fz-h5);
+            font-weight: var(--tp-fw-regular);
+            color: var(--tp-common-white);
+            padding-bottom:25px;
+        }
+        h4{
+            font-size: calc(var(--tp-fz-h3) + 4px) ;
+            font-weight: var(--tp-fw-medium);
+            color: var(--tp-common-white);
+            padding-bottom:10px;
+        }
+    }
+}

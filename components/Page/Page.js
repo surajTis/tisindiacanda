@@ -17,7 +17,16 @@ import ThroughBoxImg5 from "../../public/assets/img/through-bx-img5.webp";
 import ThroughBoxImg6 from "../../public/assets/img/through-bx-img6.webp";
 import ThroughBoxImg7 from "../../public/assets/img/through-bx-img7.webp";
 import ThroughBoxImg8 from "../../public/assets/img/through-bx-img8.webp";
+import IntwoLogo from "../../public/assets/img/intwo-logo.webp";
+import AboutDigiImgSm1 from "../../public/assets/img/about-digitech-img-small1.webp";
+import AboutDigiImgSm2 from "../../public/assets/img/about-digitech-img-small.webp";
+import AboutDigiImgSm from "../../public/assets/img/about-digitech-img.webp";
+import DigiRoleImg from "../../public/assets/img/digital-role-img.webp";
+import DigiRoleImgSm from "../../public/assets/img/digital-role-img-sm.webp";
 import { Footer } from "components/Footer";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
 export const Page = (props) => {
 
   return (
@@ -564,6 +573,148 @@ export const Page = (props) => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="textmonail-outer">
+        <div className="container">
+          <div className="head">
+            <h3>TESTIMONIALS</h3>
+            <h2>What Our Client say</h2>
+          </div>
+          <div className="textmonail-slide">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={1}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide>
+                <div className="textmonail-row">
+                  <div className="textmonail-logo">
+                    <Image
+                      src={IntwoLogo}
+                      alt="Picture of the author"
+                    />
+                    <div className="star-rating">
+                      <span className="fa fa-star" data-rating="1"></span>
+                      <span className="fa fa-star" data-rating="2"></span>
+                      <span className="fa fa-star" data-rating="3"></span>
+                      <span className="fa fa-star" data-rating="4"></span>
+                      <span className="fa fa-star" data-rating="5"></span>
+                      <input type="hidden" name="whatever1" className="rating-value" value="2.56" />
+                    </div>
+                  </div>
+                  <div className="textmonail-text">
+                    <p>We couldnt be happier with the outstanding work DMA Netherlands delivered for us at Intwo! Their teams website design and development skills
+                      are truly top-notch, and they transformed our online presence into something truly remarkable. Not only did they create a visually stunning
+                      website, but they also took care of our SEO and paid ads strategy. The results were beyond our expectations! Our website traffic has
+                      significantly increased, and our brand visibility has skyrocketed. Their attention to detail, creativity, and dedication to our project were
+                      truly exceptional. We wholeheartedly recommend DMA Netherlands to anyone in need of web design, development, and digital marketing services.</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="textmonail-row">
+                  <div className="textmonail-logo">
+                    <Image
+                      src={IntwoLogo}
+                      alt="Picture of the author"
+                    />
+                    <div className="star-rating">
+                      <span className="fa fa-star" data-rating="1"></span>
+                      <span className="fa fa-star" data-rating="2"></span>
+                      <span className="fa fa-star" data-rating="3"></span>
+                      <span className="fa fa-star" data-rating="4"></span>
+                      <span className="fa fa-star" data-rating="5"></span>
+                      <input type="hidden" name="whatever1" className="rating-value" value="2.56" />
+                    </div>
+                  </div>
+                  <div className="textmonail-text">
+                    <p>We couldnt be happier with the outstanding work DMA Netherlands delivered for us at Intwo! Their teams website design and development skills
+                      are truly top-notch, and they transformed our online presence into something truly remarkable. Not only did they create a visually stunning
+                      website, but they also took care of our SEO and paid ads strategy. The results were beyond our expectations! Our website traffic has
+                      significantly increased, and our brand visibility has skyrocketed. Their attention to detail, creativity, and dedication to our project were
+                      truly exceptional. We wholeheartedly recommend DMA Netherlands to anyone in need of web design, development, and digital marketing services.</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+
+
+          </div>
+        </div>
+      </section>
+      <section className="about-digitech-outer">
+        <div className="container">
+          <div className="row">
+            <div className="col col-lg-7 col-md-7 col-sm-7 col-xs-12 about-digitech-left">
+              <h3>about tis digitech</h3>
+              <h2>A Leading Digital Marketing Agency in the UK</h2>
+              <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+              <h4>Strengthening Your Digital Presence</h4>
+              <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+            </div>
+            <div className="col col-lg-5 col-md-5 col-sm-5 col-xs-12 about-digitech-right">
+              <figure>
+                <Image
+                  src={AboutDigiImgSm1}
+                  alt="Picture of the author"
+                />
+                <div className="about-small">
+                  <div className="about-small-sm">
+
+                    <Image
+                      src={AboutDigiImgSm2}
+                      alt="Picture of the author"
+                    />
+                  </div>
+                  <div className="about-small-sm">
+                    <Image
+                      src={AboutDigiImgSm}
+                      alt="Picture of the author"
+                    />
+
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="role-digital-marketing-outer">
+        <div className="container">
+          <div className="row">
+            <div className="col col-lg-6 col-md-6 col-sm-6 col-xs-12 role-digital-left">
+              <figure>
+                <Image
+                  src={DigiRoleImg}
+                  alt="Picture of the author"
+                />
+
+                <div className="role-digital-sm">
+                  <Image
+                    src={DigiRoleImgSm}
+                    alt="Picture of the author"
+                  />
+                </div>
+              </figure>
+            </div>
+            <div className="col col-lg-6 col-md-6 col-sm-6 col-xs-12 role-digital-right">
+              <h4>The Role of a Digital Marketing Agency</h4>
+              <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <h4>Your Digital Success Partner</h4>
+              <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,58 @@
+@use "../utils" as *;
+.textmonail-outer{padding: 73px 0px; 
+    .head{
+        text-align: center;
+        & h3{
+            font-size: var(--tp-fz-h4);
+            font-weight: var(--tp-fw-regular);
+            text-transform: uppercase;
+            color: var(--tp-common-black);
+            padding-bottom:20px;
+        }
+        & h2{
+            font-size: var(--tp-fz-h2);
+            font-weight: var(--tp-fw-sbold);
+            color: var(--tp-common-black);
+            padding-bottom:15px;
+        }
+    }
+    .textmonail-slide{ margin-top: 50px;
+        .textmonail-row{ display: flex;
+            .textmonail-logo{
+                max-width: 292px; min-width: 292px; display: flex; align-items: center; justify-content: center; align-content: center; flex-wrap: wrap;
+                img{
+                    object-fit: contain; max-height: 100%;
+                }
+                .star-rating {
+                    clear: left;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 15px;
+                    font-size: var(--tp-fz-h4);
+                    .fa-star {
+                        color: #FFC700;
+                      }
+                  }
+            }
+            .textmonail-text{
+                width: 100%; padding-left: 44px; border-left: 1px solid #D1D1D1;
+                p{
+                    color: var(--tp-common-black);font-size: var(--tp-fz-h4);line-height: 180.5%; font-weight: var(--tp-fw-regular);
+                }
+            }
+        }
+        .slick-prev{
+            &:before{
+                content: "\f104";font-family: "Font Awesome 6 Pro";color: var(--tp-heading-primary);  font-size: var(--tp-fz-h2);
+                font-weight: var(--tp-fw-sbold);
+            }
+        }
+        .slick-next{
+            &:before{
+                content: "\f105";font-family: "Font Awesome 6 Pro";color: var(--tp-heading-primary);  font-size: var(--tp-fz-h2);
+                font-weight: var(--tp-fw-sbold);
+            }
+        }
+    }
+}
